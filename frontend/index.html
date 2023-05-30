@@ -82,12 +82,13 @@
 
             margin-top: 20px;
         }
+
         .mybtns > button {
             margin-right: 10px;
         }
     </style>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             fetch("http://spartacodingclub.shop/web/api/movie")
                 .then(res => res.json())
                 .then(data => {
@@ -118,10 +119,11 @@
                 })
         });
 
-        function open_box(){
+        function open_box() {
             $('#post-box').show()
         }
-        function close_box(){
+
+        function close_box() {
             $('#post-box').hide()
         }
     </script>
@@ -138,15 +140,15 @@
         <label>영화URL</label>
     </div>
     <div class="input-group mb-3">
-        <label class="input-group-text" for="inputGroupSmoviect01">별점</label>
-        <smoviect class="form-smoviect" id="star">
-            <option smoviected>-- 선택하기 --</option>
+        <label class="input-group-text" for="inputGroupSelect01">별점</label>
+        <select class="form-select" id="inputGroupSelect01">
+            <option >-- 선택하기 --</option>
             <option value="1">⭐</option>
             <option value="2">⭐⭐</option>
             <option value="3">⭐⭐⭐</option>
             <option value="4">⭐⭐⭐⭐</option>
             <option value="5">⭐⭐⭐⭐⭐</option>
-        </smoviect>
+        </select>
     </div>
     <div class="form-floating">
         <textarea id="comment" class="form-control" placeholder="Leave a comment here"></textarea>
