@@ -71,7 +71,7 @@
             padding: 20px;
             box-shadow: 0px 0px 3px 0px gray;
 
-            display: none;
+            /*display: none;*/
         }
 
         .mybtns {
@@ -89,6 +89,13 @@
     </style>
     <script>
         $(document).ready(function () {
+            fetch("http://spartacodingclub.shop/sparta_api/weather/seoul")
+                .then(res => res.json())
+                .then(data => {
+                    $('#temp').text(data['temp'])
+                })
+
+            $('#cards').empty()
             fetch("http://spartacodingclub.shop/web/api/movie")
                 .then(res => res.json())
                 .then(data => {
@@ -117,21 +124,14 @@
                         $('#cards').append(tempHtml)
                     })
                 })
-        });
-
-        function open_box() {
-            $('#post-box').show()
-        }
-
-        function close_box() {
-            $('#post-box').hide()
-        }
+        })
     </script>
 </head>
 
 <body>
 <div class="mytitle">
     <h1>내 생애 최고의 영화들</h1>
+    <div>현재 서울의 날씨 : <span id="temp">20</span>도</div>
     <button onclick="open_box()">영화 기록하기</button>
 </div>
 <div class="mypost" id="post-box">
@@ -142,7 +142,7 @@
     <div class="input-group mb-3">
         <label class="input-group-text" for="inputGroupSelect01">별점</label>
         <select class="form-select" id="inputGroupSelect01">
-            <option >-- 선택하기 --</option>
+            <option>-- 선택하기 --</option>
             <option value="1">⭐</option>
             <option value="2">⭐⭐</option>
             <option value="3">⭐⭐⭐</option>

@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+
 from pymongo import MongoClient
 client = MongoClient('mongodb+srv://sparta:test@cluster0.r2nnoby.mongodb.net/?retryWrites=true&w=majority')
 db = client.dbsparta
