@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d897196-9bf8-447c-8aed-90ee26654b2d" name="변경" comment="" />
+    <list default="true" id="4d897196-9bf8-447c-8aed-90ee26654b2d" name="변경" comment="update pythonprac" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="2QbiyM5kbF6JNXZZPhvACEpKYWo" />
   <component name="ProjectViewState">
@@ -17,7 +21,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -29,8 +36,41 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685628940933</updated>
-      <workItem from="1685628942078" duration="1000" />
+      <workItem from="1685628942078" duration="305000" />
     </task>
+    <task id="LOCAL-00001" summary="update pythonprac">
+      <created>1685629116398</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685629116398</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update pythonprac">
+      <created>1685629222036</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685629222036</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update pythonprac" />
+    <option name="LAST_COMMIT_MESSAGE" value="update pythonprac" />
   </component>
 </project>
