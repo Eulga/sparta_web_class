@@ -1,179 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <meta property="og:title" content="아이리 칸나 팬 페이지" />
-  <meta property="og:description" content="아이리 칸나에게 응원메세지를 남길 수 있습니다." />
-  <meta property="og:image" content="https://yt3.googleusercontent.com/-Wr6IrNwEH0bZG_Fc4zPNTDnUiE4TDqh3vGE2dB4vAck7jEqN7OYnR5iMneNKjgVVmgg-XRVFA=s176-c-k-c0x00ffffff-no-rj" />
+    <meta property="og:title" content="아이리 칸나 팬 페이지"/>
+    <meta property="og:description" content="아이리 칸나에게 응원메세지를 남길 수 있습니다."/>
+    <meta property="og:image"
+          content="https://yt3.googleusercontent.com/-Wr6IrNwEH0bZG_Fc4zPNTDnUiE4TDqh3vGE2dB4vAck7jEqN7OYnR5iMneNKjgVVmgg-XRVFA=s176-c-k-c0x00ffffff-no-rj"/>
 
-  <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-          crossorigin="anonymous"
-  />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-          crossorigin="anonymous"
-  ></script>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+    ></script>
 
-  <title>초미니홈피 - 팬명록</title>
+    <title>초미니홈피 - 팬명록</title>
 
-  <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap"
-          rel="stylesheet"
-  />
-  <style>
-    * {
-      font-family: "Noto Serif KR", serif;
-    }
-    .mypic {
-      width: 100%;
-      height: 300px;
+    <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap"
+            rel="stylesheet"
+    />
+    <style>
+        * {
+            font-family: "Noto Serif KR", serif;
+        }
 
-      background-image: linear-gradient(
-              0deg,
-              rgba(0, 0, 0, 0.5),
-              rgba(0, 0, 0, 0.5)
-      ),
-      url("https://static-cdn.jtvnw.net/jtv_user_pictures/69ca945c-676d-4b6f-96c0-19d9d4c65d23-profile_banner-480.png");
-      background-position: center 30%;
-      background-size: cover;
+        .mypic {
+            width: 100%;
+            height: 300px;
 
-      color: white;
+            background-image: linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+            ),
+            url("https://static-cdn.jtvnw.net/jtv_user_pictures/69ca945c-676d-4b6f-96c0-19d9d4c65d23-profile_banner-480.png");
+            background-position: center 30%;
+            background-size: cover;
 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+            color: white;
 
-    .mypost {
-      width: 95%;
-      max-width: 500px;
-      margin: 20px auto 20px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
-      box-shadow: 0px 0px 3px 0px black;
-      padding: 20px;
-    }
+        .mypost {
+            width: 95%;
+            max-width: 500px;
+            margin: 20px auto 20px auto;
 
-    .mypost > button {
-      margin-top: 15px;
-    }
+            box-shadow: 0px 0px 3px 0px black;
+            padding: 20px;
+        }
 
-    .mycards {
-      width: 95%;
-      max-width: 500px;
-      margin: auto;
-    }
+        .mypost > button {
+            margin-top: 15px;
+        }
 
-    .mycards > .card {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-  </style>
-  <script>
-    $(document).ready(function () {
-      set_temp();
-      show_comment();
-    });
-    function set_temp() {
-      fetch("http://spartacodingclub.shop/sparta_api/weather/seoul").then((res) => res.json()).then((data) => {
-        let temp = data['temp']
-        $('#temp').text(temp)
-      });
-    }
-    function save_comment() {
-      let name = $('#name').val()
-      let comment = $('#comment').val()
+        .mycards {
+            width: 95%;
+            max-width: 500px;
+            margin: auto;
+        }
 
-      let formData = new FormData();
-      formData.append("name_give", name);
-      formData.append("comment_give", comment);
+        .mycards > .card {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            set_temp();
+            show_comment();
+        });
 
-      fetch('/guestbook', {method: "POST",body: formData,}).then((res) => res.json()).then((data) => {
-        alert(data["msg"]);
-        window.location.reload()
-      });
-    }
-    function show_comment() {
-      fetch('/guestbook').then((res) => res.json()).then((data) => {
-        $('#comment-list').empty()
+        function set_temp() {
+            fetch("http://spartacodingclub.shop/sparta_api/weather/seoul")
+                .then((res) => res.json())
+                .then((data) => {
+                    let temp = data['temp']
+                    $('#temp').text(temp)
+                });
+        }
 
-        let rows = data['result']
-        rows.forEach((a) => {
-          let name = a['name']
-          let comment = a['comment']
+        function save_comment() {
+            let name = $('#name').val()
+            let comment = $('#comment').val()
 
-          let temp_html = `<div class="card">
+            let formData = new FormData();
+            formData.append("name_give", name);
+            formData.append("comment_give", comment);
+
+            fetch('/guestbook', {method: "POST", body: formData,})
+                .then((res) => res.json())
+                .then((data) => {
+                    alert(data["msg"]);
+                    window.location.reload()
+                });
+        }
+
+        function delete_comment(name, comment) {
+
+            let formData = new FormData();
+            formData.append("name", name);
+            formData.append("comment", comment);
+
+            fetch('/deletecomment', {method: "POST", body: formData,})
+                .then((res) => res.json())
+                .then((data) => {
+                    alert(data["msg"]);
+                    window.location.reload()
+                })
+        }
+
+        function save_modified_comment(name, oldComment) {
+            let newComment = $(`#edit-comment-text-${name}`).val();
+
+            let formData = new FormData();
+            formData.append("name", name);
+            formData.append("oldComment", oldComment);
+            formData.append("newComment", newComment);
+
+            fetch('/editcomment', {method: "POST", body: formData,})
+                .then((res) => res.json())
+                .then((data) => {
+                    alert(data["msg"]);
+                    window.location.reload()
+                })
+        }
+
+        function edit_comment(name, comment) {
+            $(`#edit-comment-${name}`).show();
+            $(`#edit-comment-text-${name}`).val(comment);
+        }
+
+        function cancel_edit(name) {
+            $(`#edit-comment-${name}`).hide();
+        }
+
+        function show_comment() {
+            fetch('/guestbook').then((res) => res.json()).then((data) => {
+                $('#comment-list').empty()
+
+                let rows = data['result']
+                rows.forEach((a) => {
+                    let name = a['name']
+                    let comment = a['comment']
+
+                    let temp_html = `<div class="card">
                           <div class="card-body">
                             <blockquote class="blockquote mb-0">
                               <p>${comment}</p>
                               <footer class="blockquote-footer">${name}</footer>
                             </blockquote>
+                            <button onclick="edit_comment('${name}', '${comment}')" type="button" class="btn btn-outline-secondary">수정</button>
+                            <button onclick="delete_comment('${name}', '${comment}')" type="button" class="btn btn-outline-secondary">삭제</button>
+                          </div>
+                          <div id="edit-comment-${name}" style="display: none;">
+                            <textarea id="edit-comment-text-${name}" rows="4" class="form-control">${comment}</textarea>
+                            <button onclick="save_modified_comment('${name}', '${comment}')" type="button" class="btn btn-primary">저장</button>
+                            <button onclick="cancel_edit('${name}')" type="button" class="btn btn-secondary">취소</button>
                           </div>
                         </div>`
-          $('#comment-list').append(temp_html)
+                    $('#comment-list').append(temp_html)
+                })
+            })
+        }
 
-        })
-
-      })
-    }
-  </script>
+    </script>
 </head>
 <body>
 <div class="mypic">
-  <h1>아이리 칸나 팬명록</h1>
-  <p>현재기온: <span id="temp">36</span>도</p>
+    <h1>아이리 칸나 팬명록</h1>
+    <p>현재기온: <span id="temp">36</span>도</p>
 </div>
 <div class="mypost">
-  <div class="form-floating mb-3">
-    <input type="text" class="form-control" id="name" placeholder="url" />
-    <label for="floatingInput">닉네임</label>
-  </div>
-  <div class="form-floating">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="name" placeholder="url"/>
+        <label for="floatingInput">닉네임</label>
+    </div>
+    <div class="form-floating">
         <textarea
                 class="form-control"
                 placeholder="Leave a comment here"
                 id="comment"
                 style="height: 100px"
         ></textarea>
-    <label for="floatingTextarea2">응원댓글</label>
-  </div>
-  <button onclick="save_comment()" type="button" class="btn btn-dark">
-    댓글 남기기
-  </button>
+        <label for="floatingTextarea2">응원댓글</label>
+    </div>
+    <button onclick="save_comment()" type="button" class="btn btn-dark">
+        댓글 남기기
+    </button>
 </div>
 <div class="mycards" id="comment-list">
-  <div class="card">
-    <div class="card-body">
-      <blockquote class="blockquote mb-0">
-        <p>새로운 앨범 너무 멋져요!</p>
-        <footer class="blockquote-footer">호빵맨</footer>
-      </blockquote>
+    <div class="card">
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>새로운 앨범 너무 멋져요!</p>
+                <footer class="blockquote-footer">호빵맨</footer>
+            </blockquote>
+        </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <blockquote class="blockquote mb-0">
-        <p>새로운 앨범 너무 멋져요!</p>
-        <footer class="blockquote-footer">호빵맨</footer>
-      </blockquote>
+    <div class="card">
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>새로운 앨범 너무 멋져요!</p>
+                <footer class="blockquote-footer">호빵맨</footer>
+            </blockquote>
+        </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <blockquote class="blockquote mb-0">
-        <p>새로운 앨범 너무 멋져요!</p>
-        <footer class="blockquote-footer">호빵맨</footer>
-      </blockquote>
+    <div class="card">
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>새로운 앨범 너무 멋져요!</p>
+                <footer class="blockquote-footer">호빵맨</footer>
+            </blockquote>
+        </div>
     </div>
-  </div>
 </div>
 </body>
 </html>
